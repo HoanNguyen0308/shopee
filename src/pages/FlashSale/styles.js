@@ -1,0 +1,100 @@
+const styles = (theme) => ({
+    container: {
+        background: "#f5f5f5",
+        padding: "0 0 60px",
+    },
+    wide: {
+        maxWidth: "1200px",
+        margin: "0 auto",
+        display: "flex",
+    },
+    content: {
+        width: "100%",
+    },
+    tabs_event: {
+        width: "1200px",
+        margin: "0 auto 10px",
+    },
+    flash_sale__countdown: {
+        width: "100%",
+        position: "fixed",
+        zIndex: "2",
+        padding: "15px 0",
+        background: "#fff",
+        display: "flex",
+        justifyContent: "center",
+        "&::before": {
+            content: '""',
+            position: "absolute",
+            top: "46%",
+            left: "36%",
+            transform: "translate(-50%, -50%)",
+            width: "24px",
+            height: "1px",
+            background: "rgba(0, 0, 0, 0.6)",
+            display: "block",
+        },
+        "&::after": {
+            content: '""',
+            position: "absolute",
+            top: "46%",
+            right: "34.2%",
+            transform: "translate(-50%, -50%)",
+            width: "24px",
+            height: "1px",
+            background: "rgba(0, 0, 0, 0.6)",
+            display: "block",
+        },
+    },
+    countdown_img: {
+        background: "url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/fb1088de81e42c4e538967ec12cb5caa.png) 50% center / contain no-repeat",
+        paddingLeft: "16px",
+        width: "114px",
+        height: "30px",
+        lineHeight: "30px",
+    },
+    countdown_name: {
+        display: "flex",
+        alignItems: "center",
+        margin: "0px 16px 0 12px",
+        color: "rgba(0, 0, 0, 0.8)",
+        fontSize: "14px",
+        marginBottom: "4px",
+    },
+    countdown_name__icon: {
+        fontSize: "18px",
+        marginRight: "4px",
+    },
+    countdown_item: {
+        display: "inline-block",
+        backgroundColor: "#000",
+        color: "#fff",
+        borderRadius: "2px",
+        padding: "0 3px",
+        fontWeight: "500",
+        margin: "0 2px",
+    },
+    flash_sale__banner: {
+        backgroundImage: "url(https://cf.shopee.vn/file/c215f509c47fe75cbd742a039ce57602)",
+        paddingTop: "230px",
+        width: "100%",
+        margin: "60px auto 0",
+        position: "relative",
+        left: "50%",
+        transform: "translateX(-50%)",
+    },
+    products_flash__sale: {
+        marginTop: "20px",
+    },
+    tab_event__hour: {
+        fontSize: "1.5rem",
+        color: "#c3c3c3",
+        lineHeight: "1.5rem",
+    },
+    tab_event__status: {
+        fontSize: "14px",
+        color: "#c3c3c3",
+    },
+});
+
+export default styles;
